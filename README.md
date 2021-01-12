@@ -6,9 +6,8 @@ The command that you input should be in the forme like ```command {XX,YY}```
 
 There are 5 commands viable:
 
-### Declare
 
-**de** : declare the Device with Firmware
+1. **de** : declare the Device with Firmware
 
 e.g.
 
@@ -17,7 +16,7 @@ e.g.
 `de {SLB-01,FW-02}` return `SLB already declare`
 
 
-**a** : associate the Device with User
+2. **a** : associate the Device with User
 
 e.g.
 
@@ -27,7 +26,7 @@ e.g.
 
 `a {SLB-33,USER-02}` return `USER already have its own SLB`
 
-**di** : dissociate the Device with User
+3. **di** : dissociate the Device with User
 
 e.g.
 
@@ -39,7 +38,7 @@ LIST User = {SLB-01,USER-01},{SLB-02,USER-02}
 
 `di {SLB-01,USER-47}` return `SLB and USER does not match`
 
-**m** : update the firmware
+4. **m** : update the firmware
 
 e.g. 
 
@@ -49,5 +48,5 @@ LIST Firmware = {SLB-01,FW-01},{SLB-02,FW-01}
 
 `m {SLB-04,FW-03}` return `SLB does not have an FIRMWARE`
 
-**show** : show the lists of firmware and user
+5. **show** : show the lists of firmware and user
 
