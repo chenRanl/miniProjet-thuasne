@@ -10,30 +10,29 @@ There are 5 commands viable:
 - **de** : declare the Device with Firmware
 
   e.g.
-
-`de {SLB-01,FW-01}` return `OK`
-
-`de {SLB-01,FW-02}` return `SLB already declare`
+  
+  `de {SLB-01,FW-01}` return `OK`
+  
+  `de {SLB-01,FW-02}` return `SLB already declare`
 
 
 - **a** : associate the Device with User
-
   e.g.
-
+  
   `a {SLB-01,USER-01}` and  `a {SLB-02,USER-02}` return `OK`
-
+  
   `a {SLB-01,USER-03}` return `SLB already have an USER`
-
+  
   `a {SLB-33,USER-02}` return `USER already have its own SLB`
 
-3. **di** : dissociate the Device with User
-
+- **di** : dissociate the Device with User
+  
   e.g.
-
+  
   LIST User = {SLB-01,USER-01},{SLB-02,USER-02}
-
+  
   `di {SLB-02,USER-02}` return `OK`
-
+  
   `di {SLB-33,USER-01}` return `SLB does not have an USER`
 
 `di {SLB-01,USER-47}` return `SLB and USER does not match`
