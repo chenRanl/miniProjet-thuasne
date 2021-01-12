@@ -4,6 +4,8 @@ Start the programme by `node miniProjet.js`
 ## Notification
 The command that you input should be in the forme like ```command {XX,YY}```
 
+--There is only one {XX,YY} after command-- 
+
 There are 5 commands viable:
 
 
@@ -34,18 +36,18 @@ There are 5 commands viable:
   `di {SLB-02,USER-02}` return `OK`
   
   `di {SLB-33,USER-01}` return `SLB does not have an USER`
+  
+  `di {SLB-01,USER-47}` return `SLB and USER does not match`
 
-`di {SLB-01,USER-47}` return `SLB and USER does not match`
+- **m** : update the firmware
+  
+  e.g. 
+  
+  LIST Firmware = {SLB-01,FW-01},{SLB-02,FW-01}
+  
+  `m {SLB-01,FW-03}` return `OK`
+  
+  `m {SLB-04,FW-03}` return `SLB does not have an FIRMWARE`
 
-4. **m** : update the firmware
-
-e.g. 
-
-LIST Firmware = {SLB-01,FW-01},{SLB-02,FW-01}
-
-`m {SLB-01,FW-03}` return `OK`
-
-`m {SLB-04,FW-03}` return `SLB does not have an FIRMWARE`
-
-5. **show** : show the lists of firmware and user
+- **show** : show the lists of firmware and user
 
