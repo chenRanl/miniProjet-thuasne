@@ -7,7 +7,7 @@ The command that you input should be in the forme like ```command {XX,YY}```
 There are 5 commands viable:
 
 
-1. **de** : declare the Device with Firmware
+- **de** : declare the Device with Firmware
 
   e.g.
 
@@ -16,7 +16,7 @@ There are 5 commands viable:
 `de {SLB-01,FW-02}` return `SLB already declare`
 
 
-2. **a** : associate the Device with User
+- **a** : associate the Device with User
 
   e.g.
 
