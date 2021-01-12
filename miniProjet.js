@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 var firmware = new Array();
 var user = new Array();
 
+//function for check if dic is empty 
 function isEmptyObject(obj){
     for (var n in obj) {
         return false
@@ -14,6 +15,7 @@ function isEmptyObject(obj){
     return true;
 }
 
+//function for check if the user is already in user list
 function isUserExist(ele,obj){
   for (var n in obj){
     if (ele == obj[n]){
