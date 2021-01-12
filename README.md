@@ -4,7 +4,7 @@ Start the programme by `node miniProjet.js`
 ## Notification
 The command that you input should be in the forme like ```command {XX,YY}```
 
---There is only one {XX,YY} after command-- 
+*There is only one {XX,YY} after command*
 
 There are 5 commands viable:
 
