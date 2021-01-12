@@ -77,7 +77,7 @@ function MiseAJour(data){
   data = data.replace(/^(\s|{)+|(\s|})+$/g, '');
   var device = data.split(',')
   if (device[0] in firmware){
-    user[device[0]] = device[1];
+    firmware[device[0]] = device[1];
     console.log('OK');
   } else {
     console.log('SLB does not have an FIRMWARE');
