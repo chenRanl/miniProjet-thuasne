@@ -103,6 +103,8 @@ rl.on('line',function(line){
     case 'show':
       console.log('user list',user)
       console.log('firmware list',firmware)
+      break;
+          
     default:
       console.log('command not right')
 
